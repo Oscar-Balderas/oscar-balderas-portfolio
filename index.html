@@ -13,38 +13,11 @@
       color: #e6e9ef;
     }
 
-    /* HERO */
+    /* HERO SIMPLE */
     .hero {
-      position: relative;
-      height: 400px;
       background: #0b1220;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      padding: 80px 20px 40px;
       text-align: center;
-    }
-
-    .hero img {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: contain; /* 👈 clave para que se vea completa */
-      z-index: 0;
-    }
-
-    /* overlay oscuro */
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
     }
 
     .hero h1 {
@@ -60,7 +33,7 @@
     .wrap {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     .card {
@@ -117,17 +90,6 @@
     .muted {
       color: #b8c0d6;
     }
-
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      .hero {
-        height: 280px;
-      }
-
-      .hero h1 {
-        font-size: 28px;
-      }
-    }
   </style>
 </head>
 
@@ -135,12 +97,8 @@
 
   <!-- HERO -->
   <div class="hero">
-    <img src="animadaMia.jpeg" alt="Oscar Portfolio Image">
-
-    <div class="hero-content">
-      <h1>Oscar Balderas</h1>
-      <p>Frontend Developer | Future Global Trade Tech Builder</p>
-    </div>
+    <h1>Oscar Balderas</h1>
+    <p>Frontend Developer | Future Global Trade Tech Builder</p>
   </div>
 
   <div class="wrap">
@@ -148,6 +106,7 @@
     <!-- ABOUT -->
     <div class="card">
       <h2>About Me</h2>
+
       <p>
         I am a frontend developer focused on building clean, responsive, and maintainable web applications.
         Currently, I am expanding my skills while exploring how technology can solve real-world problems.
@@ -211,12 +170,16 @@
     <!-- CONTACT -->
     <div class="card">
       <h2>Contact</h2>
-      <p>LinkedIn: 
+
+      <p>
+        LinkedIn:
         <a href="https://www.linkedin.com/in/oscar-balderasdev/" target="_blank">
           oscar-balderasdev
         </a>
       </p>
-      <p>GitHub: 
+
+      <p>
+        GitHub:
         <a href="https://github.com/Oscar-Balderas" target="_blank">
           Oscar-Balderas
         </a>
