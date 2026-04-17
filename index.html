@@ -1,65 +1,196 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oscar Balderas | Portafolio</title>
+  <title>Oscar Balderas | Portfolio</title>
+
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;background:#0b1220;color:#e6e9ef}
-    .wrap{max-width:920px;margin:0 auto;padding:48px 20px}
-    .card{background:#121a2b;border:1px solid #24314d;border-radius:18px;padding:24px}
-    a{color:#7aa2ff;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .grid{display:grid;grid-template-columns:1fr;gap:14px}
-    @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
-    .tag{display:inline-block;background:#1b2742;border:1px solid #2a3a5d;padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:14px}
-    .muted{color:#b8c0d6}
-    h1{margin:0 0 6px 0}
-    h2{margin:18px 0 10px 0}
-    .btn{display:inline-block;margin-top:10px;background:#2b63ff;color:white;padding:10px 14px;border-radius:10px}
+    body {
+      font-family: system-ui, Segoe UI, Roboto, Arial;
+      margin: 0;
+      background: #0b1220;
+      color: #e6e9ef;
+    }
+
+    .hero {
+      height: 380px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("animadaMia.jpeg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      color: #cbd5f5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #121a2b;
+      border: 1px solid #24314d;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+      background: #2b63ff;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #1f4ed8;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1b2742;
+      border: 1px solid #2a3a5d;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin: 6px 6px 0 0;
+      font-size: 14px;
+    }
+
+    .muted {
+      color: #b8c0d6;
+    }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <div class="card">
-      <h1>Oscar Balderas</h1>
-      <p class="muted">Frontend Developer Jr | HTML • CSS • JavaScript • React</p>
 
-      <h2>Sobre mí</h2>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Oscar Balderas</h1>
+      <p>Frontend Developer | Future Global Trade Tech Builder</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- ABOUT -->
+    <div class="card">
+      <h2>About Me</h2>
       <p>
-        Desarrollador frontend con enfoque en construir aplicaciones web claras, responsivas y mantenibles.
-        Me gusta trabajar con estructura semántica, DOM y buenas prácticas de organización de código.
+        I am a frontend developer focused on building clean, responsive, and maintainable web applications.
+        Currently, I am expanding my skills while exploring how technology can solve real-world problems.
+      </p>
+
+      <p>
+        My long-term goal is to develop software solutions for global trade and business operations,
+        combining my interest in technology with my experience in entrepreneurship.
+        I am at the beginning of this journey, but actively building the foundation to grow in this direction.
       </p>
 
       <div>
         <span class="tag">HTML5</span>
         <span class="tag">CSS3</span>
         <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
         <span class="tag">Git</span>
       </div>
+    </div>
 
-      <h2>Contacto</h2>
-      <ul>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/oscar-balderasdev/" target="_blank">oscar-balderasdev</a></li>
-        <li>GitHub: <a href="https://github.com/Oscar-Balderas" target="_blank">Oscar-Balderas</a></li>
-      </ul>
+    <!-- PROJECTS -->
+    <div class="card">
+      <h2>Projects</h2>
 
-      <h2>Proyectos</h2>
       <div class="grid">
+
         <div class="card">
           <h3>Black Cube International – Corporate Website</h3>
-          <p class="muted">Sitio corporativo responsivo con despliegue en dominio.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/blackcube-website" target="_blank">Ver repositorio</a>
-          <a class="btn" href="https://blackcubeinternational.us" target="_blank">Ver demo</a>
+          <p class="muted">Responsive corporate website with custom domain deployment.</p>
+          <a class="btn" href="https://github.com/Oscar-Balderas/blackcube-website" target="_blank">Repository</a>
+          <a class="btn" href="https://blackcubeinternational.us" target="_blank">Live Demo</a>
         </div>
 
         <div class="card">
-          <h3>Expense Tracker (Gastos)</h3>
-          <p class="muted">App para presupuesto y gastos por categoría con estadísticas.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_expenses_es" target="_blank">Ver repositorio</a>
+          <h3>Expense Tracker</h3>
+          <p class="muted">Interactive budget and expense management app with real-time stats.</p>
+          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_expenses_es" target="_blank">Repository</a>
         </div>
+
+        <div class="card">
+          <h3>Around the U.S.</h3>
+          <p class="muted">Interactive gallery with add, like, delete and profile editing features.</p>
+          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_around_es" target="_blank">Repository</a>
+        </div>
+
+        <div class="card">
+          <h3>Around the U.S. (React)</h3>
+          <p class="muted">React version of the interactive gallery using reusable components.</p>
+          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_around_react" target="_blank">Repository</a>
+        </div>
+
+        <div class="card">
+          <h3>Homeland</h3>
+          <p class="muted">Responsive storytelling project focused on layout and design.</p>
+          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_homeland" target="_blank">Repository</a>
+        </div>
+
       </div>
     </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/oscar-balderasdev/" target="_blank">
+          oscar-balderasdev
+        </a>
+      </p>
+      <p>GitHub: 
+        <a href="https://github.com/Oscar-Balderas" target="_blank">
+          Oscar-Balderas
+        </a>
+      </p>
+    </div>
+
   </div>
+
 </body>
 </html>
