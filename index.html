@@ -7,13 +7,12 @@
 
   <style>
     body {
-      font-family: system-ui, Segoe UI, Roboto, Arial;
+      font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
       margin: 0;
       background: #0b1220;
       color: #e6e9ef;
     }
 
-    /* HERO SIMPLE */
     .hero {
       background: #0b1220;
       padding: 80px 20px 40px;
@@ -87,8 +86,16 @@
       font-size: 14px;
     }
 
+    .project-tags {
+      margin: 12px 0 4px;
+    }
+
     .muted {
       color: #b8c0d6;
+    }
+
+    .contact-link {
+      color: #7da2ff;
     }
   </style>
 </head>
@@ -96,26 +103,28 @@
 <body>
 
   <!-- HERO -->
-  <div class="hero">
+  <header class="hero">
     <h1>Oscar Balderas</h1>
     <p>Frontend Developer | Future Global Trade Tech Builder</p>
-  </div>
+  </header>
 
-  <div class="wrap">
+  <main class="wrap">
 
     <!-- ABOUT -->
-    <div class="card">
+    <section class="card">
       <h2>About Me</h2>
 
       <p>
-        I am a frontend developer focused on building clean, responsive, and maintainable web applications.
-        Currently, I am expanding my skills while exploring how technology can solve real-world problems.
+        I am a frontend developer focused on building clean, responsive, and
+        maintainable web applications. Currently, I am expanding my skills while
+        exploring how technology can solve real-world problems.
       </p>
 
       <p>
-        My long-term goal is to develop software solutions for global trade and business operations,
-        combining my interest in technology with my experience in entrepreneurship.
-        I am at the beginning of this journey, but actively building the foundation to grow in this direction.
+        My long-term goal is to develop software solutions for global trade and
+        business operations, combining my interest in technology with my
+        experience in entrepreneurship. I am at the beginning of this journey,
+        but actively building the foundation to grow in this direction.
       </p>
 
       <div>
@@ -125,68 +134,217 @@
         <span class="tag">React</span>
         <span class="tag">Git</span>
       </div>
-    </div>
+    </section>
 
     <!-- PROJECTS -->
-    <div class="card">
+    <section class="card">
       <h2>Projects</h2>
 
       <div class="grid">
 
-        <div class="card">
+        <!-- BLACK CUBE -->
+        <article class="card">
           <h3>Black Cube International – Corporate Website</h3>
-          <p class="muted">Responsive corporate website with custom domain deployment.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/blackcube-website" target="_blank">Repository</a>
-          <a class="btn" href="https://blackcubeinternational.us" target="_blank">Live Demo</a>
-        </div>
 
-        <div class="card">
+          <p class="muted">
+            Corporate website for an international commodities company,
+            featuring responsive design and custom domain deployment.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/blackcube-website"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+
+          <a
+            class="btn"
+            href="https://blackcubeinternational.us"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+        </article>
+
+        <!-- EXPENSE TRACKER -->
+        <article class="card">
           <h3>Expense Tracker</h3>
-          <p class="muted">Interactive budget and expense management app with real-time stats.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_expenses_es" target="_blank">Repository</a>
-        </div>
 
-        <div class="card">
+          <p class="muted">
+            Interactive budget and expense management application with
+            dynamically updated financial statistics.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/web_project_expenses_es"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </article>
+
+        <!-- AROUND VANILLA JS -->
+        <article class="card">
           <h3>Around the U.S.</h3>
-          <p class="muted">Interactive gallery with add, like, delete and profile editing features.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_around_es" target="_blank">Repository</a>
-        </div>
 
-        <div class="card">
+          <p class="muted">
+            Interactive image gallery with card creation, likes, deletion and
+            user profile editing features.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">DOM</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/web_project_around_es"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </article>
+
+        <!-- AROUND REACT -->
+        <article class="card">
           <h3>Around the U.S. (React)</h3>
-          <p class="muted">React version of the interactive gallery using reusable components.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_around_react" target="_blank">Repository</a>
-        </div>
 
-        <div class="card">
+          <p class="muted">
+            React version of the interactive gallery, developed with reusable
+            components and state management.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/web_project_around_react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </article>
+
+        <!-- MULTIVERSE EXPLORER -->
+        <article class="card">
+          <h3>Multiverse Explorer</h3>
+
+          <p class="muted">
+            React application that consumes the Rick and Morty API, using
+            reusable components, client-side routing and dynamic character data.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">REST API</span>
+            <span class="tag">React Router</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/multiverse-explorer-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+
+          <a
+            class="btn"
+            href="https://oscar-balderas.github.io/multiverse-explorer-frontend/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+        </article>
+
+        <!-- HOMELAND -->
+        <article class="card">
           <h3>Homeland</h3>
-          <p class="muted">Responsive storytelling project focused on layout and design.</p>
-          <a class="btn" href="https://github.com/Oscar-Balderas/web_project_homeland" target="_blank">Repository</a>
-        </div>
+
+          <p class="muted">
+            Responsive storytelling website focused on adaptive layouts,
+            visual composition and modern CSS techniques.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/Oscar-Balderas/web_project_homeland"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
+          </a>
+        </article>
 
       </div>
-    </div>
+    </section>
 
     <!-- CONTACT -->
-    <div class="card">
+    <section class="card">
       <h2>Contact</h2>
 
       <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/oscar-balderasdev/" target="_blank">
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/oscar-balderasdev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           oscar-balderasdev
         </a>
       </p>
 
       <p>
         GitHub:
-        <a href="https://github.com/Oscar-Balderas" target="_blank">
+        <a
+          class="contact-link"
+          href="https://github.com/Oscar-Balderas"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Oscar-Balderas
         </a>
       </p>
-    </div>
+    </section>
 
-  </div>
+  </main>
 
 </body>
 </html>
