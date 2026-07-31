@@ -3,14 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oscar Balderas | Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Oscar Balderas, Full-Stack Web Developer specializing in JavaScript, React, Node.js, Express and MongoDB."
+  />
+
+  <title>Oscar Balderas | Full-Stack Web Developer</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
       background: #0b1220;
       color: #e6e9ef;
+      line-height: 1.6;
     }
 
     .hero {
@@ -20,13 +35,21 @@
     }
 
     .hero h1 {
-      font-size: 42px;
+      font-size: clamp(36px, 6vw, 50px);
       margin: 0;
     }
 
-    .hero p {
-      margin-top: 10px;
+    .hero__role {
+      margin: 10px 0 0;
       color: #cbd5f5;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .hero__specialty {
+      margin: 4px 0 0;
+      color: #9ca9c7;
+      font-size: 16px;
     }
 
     .wrap {
@@ -45,6 +68,11 @@
 
     h2 {
       margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      margin-top: 0;
     }
 
     .grid {
@@ -53,27 +81,54 @@
       gap: 16px;
     }
 
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .skill-group {
+      background: #0f1728;
+      border: 1px solid #24314d;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .skill-group h3 {
+      margin-bottom: 10px;
+    }
+
     @media (min-width: 800px) {
-      .grid {
+      .grid,
+      .skills-grid {
         grid-template-columns: 1fr 1fr;
       }
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 14px;
       margin-right: 10px;
       background: #2b63ff;
       color: white;
       padding: 10px 14px;
       border-radius: 10px;
       text-decoration: none;
-      transition: 0.2s;
+      font-weight: 600;
+      transition:
+        background 0.2s,
+        transform 0.2s;
     }
 
     .btn:hover {
       background: #1f4ed8;
       transform: translateY(-2px);
+    }
+
+    .btn:focus-visible,
+    a:focus-visible {
+      outline: 3px solid #9db5ff;
+      outline-offset: 3px;
     }
 
     .tag {
@@ -97,6 +152,26 @@
     .contact-link {
       color: #7da2ff;
     }
+
+    .contact-link:hover {
+      color: #a8bcff;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card__actions {
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    footer {
+      padding: 10px 20px 40px;
+      text-align: center;
+      color: #8995b2;
+    }
   </style>
 </head>
 
@@ -105,7 +180,14 @@
   <!-- HERO -->
   <header class="hero">
     <h1>Oscar Balderas</h1>
-    <p>Frontend Developer | Future Global Trade Tech Builder</p>
+
+    <p class="hero__role">
+      Full-Stack Web Developer
+    </p>
+
+    <p class="hero__specialty">
+      JavaScript · React · Node.js · Express · MongoDB
+    </p>
   </header>
 
   <main class="wrap">
@@ -115,24 +197,78 @@
       <h2>About Me</h2>
 
       <p>
-        I am a frontend developer focused on building clean, responsive, and
-        maintainable web applications. Currently, I am expanding my skills while
-        exploring how technology can solve real-world problems.
+        I am a Full-Stack Web Developer trained in building responsive,
+        maintainable and user-focused web applications using JavaScript,
+        React, Node.js, Express and MongoDB.
       </p>
 
       <p>
-        My long-term goal is to develop software solutions for global trade and
-        business operations, combining my interest in technology with my
-        experience in entrepreneurship. I am at the beginning of this journey,
-        but actively building the foundation to grow in this direction.
+        I have experience developing frontend interfaces, integrating REST APIs,
+        creating backend services, working with databases, implementing
+        authentication and deploying applications to cloud environments.
       </p>
 
-      <div>
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS3</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">React</span>
-        <span class="tag">Git</span>
+      <p>
+        My background in entrepreneurship, business management and international
+        commodities trade allows me to combine software development with an
+        understanding of real operational and commercial needs. My long-term
+        goal is to build technology solutions for global trade and business
+        operations.
+      </p>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="card">
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Frontend Development</h3>
+
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript ES6+</span>
+          <span class="tag">React</span>
+          <span class="tag">React Router</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">REST API Integration</span>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend Development</h3>
+
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Mongoose</span>
+          <span class="tag">Authentication</span>
+          <span class="tag">JWT</span>
+        </div>
+
+        <div class="skill-group">
+          <h3>Development Tools</h3>
+
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">npm</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Figma</span>
+        </div>
+
+        <div class="skill-group">
+          <h3>Deployment and Workflow</h3>
+
+          <span class="tag">Google Cloud</span>
+          <span class="tag">GitHub Pages</span>
+          <span class="tag">Cloud Deployment</span>
+          <span class="tag">Git Branches</span>
+          <span class="tag">Pull Requests</span>
+          <span class="tag">Responsive Testing</span>
+        </div>
+
       </div>
     </section>
 
@@ -143,7 +279,7 @@
       <div class="grid">
 
         <!-- BLACK CUBE -->
-        <article class="card">
+        <article class="card project-card">
           <h3>Black Cube International – Corporate Website</h3>
 
           <p class="muted">
@@ -155,29 +291,32 @@
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
             <span class="tag">Responsive Design</span>
+            <span class="tag">Custom Domain</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/blackcube-website"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/blackcube-website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
 
-          <a
-            class="btn"
-            href="https://blackcubeinternational.us"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
+            <a
+              class="btn"
+              href="https://blackcubeinternational.us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
 
         <!-- EXPENSE TRACKER -->
-        <article class="card">
+        <article class="card project-card">
           <h3>Expense Tracker</h3>
 
           <p class="muted">
@@ -189,20 +328,23 @@
             <span class="tag">JavaScript</span>
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
+            <span class="tag">DOM</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/web_project_expenses_es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/web_project_expenses_es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+          </div>
         </article>
 
         <!-- AROUND VANILLA JS -->
-        <article class="card">
+        <article class="card project-card">
           <h3>Around the U.S.</h3>
 
           <p class="muted">
@@ -213,22 +355,25 @@
           <div class="project-tags">
             <span class="tag">JavaScript</span>
             <span class="tag">DOM</span>
+            <span class="tag">Form Validation</span>
             <span class="tag">Responsive Design</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/web_project_around_es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/web_project_around_es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+          </div>
         </article>
 
         <!-- AROUND REACT -->
-        <article class="card">
-          <h3>Around the U.S. (React)</h3>
+        <article class="card project-card">
+          <h3>Around the U.S. — React</h3>
 
           <p class="muted">
             React version of the interactive gallery, developed with reusable
@@ -239,24 +384,27 @@
             <span class="tag">React</span>
             <span class="tag">Vite</span>
             <span class="tag">JavaScript</span>
+            <span class="tag">React Hooks</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/web_project_around_react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/web_project_around_react"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+          </div>
         </article>
 
         <!-- MULTIVERSE EXPLORER -->
-        <article class="card">
+        <article class="card project-card">
           <h3>Multiverse Explorer</h3>
 
           <p class="muted">
-            React application that consumes the Rick and Morty API, using
+            React application that consumes the Rick and Morty API using
             reusable components, client-side routing and dynamic character data.
           </p>
 
@@ -267,27 +415,29 @@
             <span class="tag">React Router</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/multiverse-explorer-frontend"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/multiverse-explorer-frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
 
-          <a
-            class="btn"
-            href="https://oscar-balderas.github.io/multiverse-explorer-frontend/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
+            <a
+              class="btn"
+              href="https://oscar-balderas.github.io/multiverse-explorer-frontend/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
 
         <!-- HOMELAND -->
-        <article class="card">
+        <article class="card project-card">
           <h3>Homeland</h3>
 
           <p class="muted">
@@ -302,14 +452,16 @@
             <span class="tag">Responsive Design</span>
           </div>
 
-          <a
-            class="btn"
-            href="https://github.com/Oscar-Balderas/web_project_homeland"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/web_project_homeland"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+          </div>
         </article>
 
       </div>
@@ -345,6 +497,10 @@
     </section>
 
   </main>
+
+  <footer>
+    <p>© 2026 Oscar Balderas. Built with HTML and CSS.</p>
+  </footer>
 
 </body>
 </html>
