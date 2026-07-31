@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
 
   <meta
     name="description"
@@ -21,22 +25,22 @@
     }
 
     body {
-      font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
       background: #0b1220;
       color: #e6e9ef;
+      font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.6;
     }
 
     .hero {
-      background: #0b1220;
       padding: 80px 20px 40px;
+      background: #0b1220;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: clamp(36px, 6vw, 50px);
       margin: 0;
+      font-size: clamp(36px, 6vw, 50px);
     }
 
     .hero__role {
@@ -59,11 +63,11 @@
     }
 
     .card {
-      background: #121a2b;
+      margin-bottom: 20px;
+      padding: 24px;
       border: 1px solid #24314d;
       border-radius: 18px;
-      padding: 24px;
-      margin-bottom: 20px;
+      background: #121a2b;
     }
 
     h2 {
@@ -88,10 +92,10 @@
     }
 
     .skill-group {
-      background: #0f1728;
+      padding: 18px;
       border: 1px solid #24314d;
       border-radius: 14px;
-      padding: 18px;
+      background: #0f1728;
     }
 
     .skill-group h3 {
@@ -109,12 +113,12 @@
       display: inline-block;
       margin-top: 14px;
       margin-right: 10px;
-      background: #2b63ff;
-      color: white;
       padding: 10px 14px;
       border-radius: 10px;
-      text-decoration: none;
+      background: #2b63ff;
+      color: #ffffff;
       font-weight: 600;
+      text-decoration: none;
       transition:
         background 0.2s,
         transform 0.2s;
@@ -133,11 +137,11 @@
 
     .tag {
       display: inline-block;
-      background: #1b2742;
-      border: 1px solid #2a3a5d;
-      padding: 6px 10px;
-      border-radius: 999px;
       margin: 6px 6px 0 0;
+      padding: 6px 10px;
+      border: 1px solid #2a3a5d;
+      border-radius: 999px;
+      background: #1b2742;
       font-size: 14px;
     }
 
@@ -169,8 +173,8 @@
 
     footer {
       padding: 10px 20px 40px;
-      text-align: center;
       color: #8995b2;
+      text-align: center;
     }
   </style>
 </head>
@@ -278,123 +282,50 @@
 
       <div class="grid">
 
-        <!-- BLACK CUBE -->
+        <!-- AROUND THE U.S. FULL STACK -->
         <article class="card project-card">
-          <h3>Black Cube International – Corporate Website</h3>
+          <h3>Around the U.S. — Full Stack</h3>
 
           <p class="muted">
-            Corporate website for an international commodities company,
-            featuring responsive design and custom domain deployment.
+            Full-stack photo gallery application featuring user registration,
+            secure authentication, profile management, image uploads, likes,
+            content deletion and persistent database storage.
           </p>
 
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">Responsive Design</span>
-            <span class="tag">Custom Domain</span>
-          </div>
-
-          <div class="project-card__actions">
-            <a
-              class="btn"
-              href="https://github.com/Oscar-Balderas/blackcube-website"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repository
-            </a>
-
-            <a
-              class="btn"
-              href="https://blackcubeinternational.us"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-
-        <!-- EXPENSE TRACKER -->
-        <article class="card project-card">
-          <h3>Expense Tracker</h3>
-
           <p class="muted">
-            Interactive budget and expense management application with
-            dynamically updated financial statistics.
-          </p>
-
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">DOM</span>
-          </div>
-
-          <div class="project-card__actions">
-            <a
-              class="btn"
-              href="https://github.com/Oscar-Balderas/web_project_expenses_es"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repository
-            </a>
-          </div>
-        </article>
-
-        <!-- AROUND VANILLA JS -->
-        <article class="card project-card">
-          <h3>Around the U.S.</h3>
-
-          <p class="muted">
-            Interactive image gallery with card creation, likes, deletion and
-            user profile editing features.
-          </p>
-
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">DOM</span>
-            <span class="tag">Form Validation</span>
-            <span class="tag">Responsive Design</span>
-          </div>
-
-          <div class="project-card__actions">
-            <a
-              class="btn"
-              href="https://github.com/Oscar-Balderas/web_project_around_es"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repository
-            </a>
-          </div>
-        </article>
-
-        <!-- AROUND REACT -->
-        <article class="card project-card">
-          <h3>Around the U.S. — React</h3>
-
-          <p class="muted">
-            React version of the interactive gallery, developed with reusable
-            components and state management.
+            The frontend and backend were developed as separate services and
+            deployed independently on Google Cloud.
           </p>
 
           <div class="project-tags">
             <span class="tag">React</span>
-            <span class="tag">Vite</span>
             <span class="tag">JavaScript</span>
-            <span class="tag">React Hooks</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Mongoose</span>
+            <span class="tag">REST API</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Google Cloud</span>
           </div>
 
           <div class="project-card__actions">
             <a
               class="btn"
-              href="https://github.com/Oscar-Balderas/web_project_around_react"
+              href="https://github.com/Oscar-Balderas/web_project_api_full"
               target="_blank"
               rel="noopener noreferrer"
             >
               Repository
+            </a>
+
+            <a
+              class="btn"
+              href="https://project19-oscar.chickenkiller.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
             </a>
           </div>
         </article>
@@ -436,26 +367,66 @@
           </div>
         </article>
 
-        <!-- HOMELAND -->
+        <!-- BLACK CUBE -->
         <article class="card project-card">
-          <h3>Homeland</h3>
+          <h3>Black Cube International – Corporate Website</h3>
 
           <p class="muted">
-            Responsive storytelling website focused on adaptive layouts,
-            visual composition and modern CSS techniques.
+            Corporate website developed for an international commodities
+            company, featuring responsive design, commercial information,
+            a contact interface and custom domain deployment.
           </p>
 
           <div class="project-tags">
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
-            <span class="tag">CSS Grid</span>
+            <span class="tag">JavaScript</span>
             <span class="tag">Responsive Design</span>
+            <span class="tag">Custom Domain</span>
           </div>
 
           <div class="project-card__actions">
             <a
               class="btn"
-              href="https://github.com/Oscar-Balderas/web_project_homeland"
+              href="https://github.com/Oscar-Balderas/blackcube-website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository
+            </a>
+
+            <a
+              class="btn"
+              href="https://blackcubeinternational.us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- EXPENSE TRACKER -->
+        <article class="card project-card">
+          <h3>Expense Tracker</h3>
+
+          <p class="muted">
+            Personal finance application designed to manage budgets and expenses
+            through an interactive interface with dynamically updated financial
+            statistics.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">DOM</span>
+          </div>
+
+          <div class="project-card__actions">
+            <a
+              class="btn"
+              href="https://github.com/Oscar-Balderas/web_project_expenses_es"
               target="_blank"
               rel="noopener noreferrer"
             >
